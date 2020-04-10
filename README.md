@@ -1,6 +1,7 @@
 # assembler
 
 > Author: Max Smith
+
 > Mentor: Nathan Choe
 
 ## Goal
