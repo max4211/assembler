@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/MIPS/ece350ISA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/xmlreader/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/xmlreader/Triplet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/xmlreader/XMLGeneratorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/xmlreader/XMLParseInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/xmlreader/XMLReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/InstructionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/ReflectionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/data/xmlreader/XMLReaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/xmlreader/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/xmlreader/XMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +15,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -64,13 +58,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="data.xmlreader" />
       <recent name="model.instruction" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RTypeTest">
+  <component name="RunManager" selected="JUnit.XMLReaderTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="assembler" />
@@ -100,8 +95,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XMLReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assembler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.xmlreader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.xmlreader" />
+      <option name="MAIN_CLASS_NAME" value="data.xmlreader.XMLReaderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.XMLReaderTest" />
         <item itemvalue="JUnit.RTypeTest" />
         <item itemvalue="Application.mif2lgsim" />
         <item itemvalue="Application.Main" />
@@ -119,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
-      <workItem from="1586534326478" duration="7553000" />
+      <workItem from="1586534326478" duration="8827000" />
     </task>
     <servers />
   </component>
@@ -138,30 +149,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="94" y="94" width="1349" height="637" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571344669" />
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586570345032">
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586615641153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586570345032" />
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586615641153" />
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586571066052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571066052" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1586572886970">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1586616830653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586572886970" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1586572886969">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586616830653" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1586616830653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586572886969" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1586572886969">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586616830653" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1586616830653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586572886969" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1586572886969">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586616830653" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1586616830653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586572886969" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586616830653" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1586570609941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -170,9 +181,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="114" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1586571058972" />
-    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586571072875">
+    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586616651106">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571072875" />
+    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586616651106" />
   </component>
 </project>

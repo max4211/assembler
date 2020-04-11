@@ -9,6 +9,7 @@ import java.util.List;
 public class InstructionFactory {
 
     private static final String INSTRUCTION_PATH = "src/model/instruction/";
+    private static final String SPACE = " ";
     private final List<Triplet> myISA;
 
     public InstructionFactory(List<Triplet> ISA) {
@@ -17,6 +18,7 @@ public class InstructionFactory {
 
     public Instruction createInstruction(String instruction) {
         try {
+            String[] splitInstruction = instruction.split(SPACE);
             Class clazz = Class.forName(createInstructionPath(instruction));
             Constructor ctor = clazz.getConstructor();
             return (Instruction) ctor.newInstance();

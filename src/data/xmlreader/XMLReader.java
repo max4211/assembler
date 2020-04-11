@@ -20,9 +20,10 @@ public class XMLReader implements XMLGeneratorInterface, XMLParseInterface {
     private static final int ZERO = 0;
     private static final String XML_EXTENSION = ".xml";
 
-    private static final String CARD_TAG = "Card";
-    private static final String SUIT_TAG = "Suit";
-    private static final String VALUE_TAG = "Value";
+    private static final String INSTRUCTION_TAG = "Instruction";
+    private static final String NAME_TAG = "Name";
+    private static final String TYPE_TAG = "Type";
+    private static final String CODE_TAG = "Code";
 
     public XMLReader(File file) throws IOException, SAXException, ParserConfigurationException {
         myDocument = XMLGeneratorInterface.createDocument(file);
@@ -32,34 +33,22 @@ public class XMLReader implements XMLGeneratorInterface, XMLParseInterface {
         myDocument = XMLGeneratorInterface.createDocument(new File(file));
     }
 
-    // TODO - refactor, very similar to parsePlayers method
-    private List<Pair> parseDeck(Document d) {
-        List<Pair> list = new ArrayList<>();
-        NodeList cardNodeList = d.getElementsByTagName(CARD_TAG);
-        for (int index = 0; index < cardNodeList.getLength(); index ++) {
-            Node cardNode = cardNodeList.item(index);
-            Element cardElement = (Element) cardNode;
-            String suit = getElement(cardElement, SUIT_TAG);
-            String value = getElement(cardElement, VALUE_TAG);
-            list.add(new Pair(suit, value));
+    @Override
+    public List<Triplet> getInstructions() {
+        List<Triplet> myList = new ArrayList<>();
+        NodeList nodeList = myDocument.getElementsByTagName(INSTRUCTION_TAG);
+        for (int index = 0; index < nodeList.getLength(); index ++) {
+            Node node = nodeList.item(index);
+            Element element = (Element) node;
+            String name = getElement(element, NAME_TAG);
+            String type = getElement(element, TYPE_TAG);
+            String code = getElement(element, CODE_TAG);
+            myList.add(new Triplet(name, type, code));
         }
-        return list;
-    }
-
-    private List<String> getXMLList(String metatag, String subtag) {
-        List<String> list = new ArrayList<>();
-        NodeList handNodeList = myDocument.getElementsByTagName(metatag);
-        for (int index = 0; index < handNodeList.getLength(); index ++) {
-            Node handNode = handNodeList.item(index);
-            Element handElement = (Element) handNode;
-            String name = getElement(handElement, subtag);
-            list.add(name);
-        }
-        return list;
+        return myList;
     }
 
     private String getElement(Element e, String tag) {
         return e.getElementsByTagName(tag).item(ZERO).getTextContent();
     }
-
 }
