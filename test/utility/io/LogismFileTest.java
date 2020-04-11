@@ -11,7 +11,7 @@ class LogismFileTest {
         output.add("00000000111000110101000000000000");
         output.add("00000000000000010010010011111111");
 
-        String path = "data/test/";
+        String path = "data/test/test";
         output.write(FileType.LOGISM, path);
     }
 }

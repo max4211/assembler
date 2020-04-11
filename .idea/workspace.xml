@@ -2,84 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/test.lgsim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/io/LogismFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/io/TextFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/utility/io/LogismFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/utility/io/TextFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bin/compare_bin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bin/misc_bin.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/ALUtest_translatedHex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/bex_setx_test_hex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/bne_test_translatedHex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/fullALUtest_hex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/jump_test_translatedHex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/lw_sw_translatedHex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/hex/overflow_hex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/bex_setx_test.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/bne_test.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/bypass_alub.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/bypass_wm.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/compare.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/fullALUtest.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/jump_test.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/lw_sw.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/memtest.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/misc.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/mx_bypass.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/overflow.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/overflow_hex.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/ovf_neg.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/regcheck.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lgsim/stall.imem.lgsim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/ALUtest.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/bex_setx_test.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/bne_test.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/bypass_alub.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/bypass_wm.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/fullALUtest.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/jump_test.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/lw_sw.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/memtest.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/mx_bypass.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/overflow.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/ovf_neg.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/regcheck.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mif/stall.mif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/ALUtest.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/bex_setx_test.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/bne_test.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/bypass_alub.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/bypass_wm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/compare.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/fullALUtest.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/jump_test.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/lw_sw.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/memtest.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/misc.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/mx_bypass.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/overflow.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/ovf_neg.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/regcheck.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/stall.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mips/stall_cond2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/converter/Converter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/converter/Digits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/converter/Digits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/io/FileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/io/FileType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/io/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/io/Output.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/io/OutputInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/io/OutputInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/converter/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/converter/Digits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/converter/Digits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/io/FileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/FileType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/io/LgsimFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/io/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/io/OutputFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/OutputFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/io/OutputInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/OutputInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/io/TxtFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test.lgsim" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/test.lgsim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/.lgsim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/assembler/utility/io/LogismFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/utility/io/LogismFileTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/utility/io/LogismFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/utility/io/LogismFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +171,7 @@
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
       <workItem from="1586534326478" duration="15558000" />
-      <workItem from="1586625485808" duration="9095000" />
+      <workItem from="1586625485808" duration="9185000" />
     </task>
     <servers />
   </component>
@@ -278,22 +206,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586635667027" />
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586641442830">
+    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586641518076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586641442830" />
-    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586641442830">
+    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586641518076" />
+    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586641518076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586641442830" />
-    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586641442830">
+    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586641518076" />
+    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586641518076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586641442830" />
-    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586641442830">
+    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586641518076" />
+    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586641518076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586641442830" />
+    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586641518076" />
     <state width="725" height="264" key="GridCell.Tab.1.bottom" timestamp="1586630137134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
