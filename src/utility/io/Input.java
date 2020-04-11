@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Input implements Iterable{
+public class Input implements Iterable, CustomList{
 
     private List<String> myInput;
 
@@ -25,5 +25,10 @@ public class Input implements Iterable{
     @Override
     public Iterator iterator() {
         return this.myInput.iterator();
+    }
+
+    @Override
+    public List<String> getList() {
+        return this.myInput;
     }
 }

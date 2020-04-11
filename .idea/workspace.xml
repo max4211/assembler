@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utility/io/FileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/io/OutputInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/model/assembler/AssemblerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/filter/FilterInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/io/CustomList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/ISA/ISA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/ISA/ISA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/ISA/ISAInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/ISA/ISAInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/XMLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/XMLReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/assembler/Assembler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/assembler/Assembler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/IType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/IType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/Instruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/InstructionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/InstructionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIIType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIIType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/RType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/RType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/Converter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/Digits.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/NameInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/PairInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/Triplet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/assembler/data/xmlreader/XMLReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/data/xmlreader/XMLReaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/assembler/utility/ConverterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/utility/ConverterTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/assembler/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/assembler/Assembler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/assembler/AssemblerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/assembler/AssemblerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/filter/Filter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/io/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/Input.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utility/io/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/Output.java" afterDir="false" />
     </list>
@@ -40,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -188,7 +167,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
-      <workItem from="1586534326478" duration="15360000" />
+      <workItem from="1586534326478" duration="15558000" />
+      <workItem from="1586625485808" duration="1424000" />
     </task>
     <servers />
   </component>
@@ -207,46 +187,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="94" y="94" width="1349" height="637" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571344669" />
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586623167830">
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586626808991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586623167830" />
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586626808991" />
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586571066052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571066052" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1586623372461">
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586623372461" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1586623372461">
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586623372461" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1586623372461">
+    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586623372461" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1586623372461">
+    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586623372461" />
-    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1586619190459">
+    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586619190459" />
-    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1586619190458">
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586619190458" />
-    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1586619190458">
+    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586619190458" />
-    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1586619190458">
+    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
+    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1586623583475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586619190458" />
+    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586623583475" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1586570609941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Output implements OutputInterface {
+public class Output implements OutputInterface, CustomList {
 
     private List<String> myOutput;
     private static final String NEWLINE = "\n";
@@ -32,5 +32,10 @@ public class Output implements OutputInterface {
             sb.append(s + NEWLINE);
         }
         return sb.toString();
+    }
+
+    @Override
+    public List<String> getList() {
+        return this.myOutput;
     }
 }
