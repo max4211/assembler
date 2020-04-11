@@ -2,6 +2,7 @@ package data.xmlreader;
 
 import org.junit.jupiter.api.Test;
 import org.xml.sax.SAXException;
+import utility.Triplet;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;

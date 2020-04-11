@@ -1,25 +1,25 @@
 package model.instruction;
 
-import data.xmlreader.Triplet;
+import ISA.ISA;
 import exceptions.ReflectionException;
 
 import java.lang.reflect.Constructor;
-import java.util.List;
 
-public class InstructionFactory {
+public class InstructionFactory implements FactoryInterface {
 
     private static final String INSTRUCTION_PATH = "src/model/instruction/";
     private static final String SPACE = " ";
-    private final List<Triplet> myISA;
+    private final ISA myISA;
 
-    public InstructionFactory(List<Triplet> ISA) {
-        this.myISA = ISA;
+    public InstructionFactory(ISA isa) {
+        this.myISA = isa;
     }
 
-    public Instruction createInstruction(String instruction) {
+    @Override
+    public Instruction createInstruction(String input) {
         try {
-            String[] splitInstruction = instruction.split(SPACE);
-            Class clazz = Class.forName(createInstructionPath(instruction));
+            String[] splitInput = input.split(SPACE);
+            Class clazz = Class.forName(createInstructionPath(input));
             Constructor ctor = clazz.getConstructor();
             return (Instruction) ctor.newInstance();
         } catch (Exception e) {

@@ -1,12 +1,10 @@
-package data.xmlreader;
+package utility;
 
-public class Triplet {
-    // immutable instance variables
-    // NOTE: these can be any two types, same or different
+public class Triplet implements PairInterface, NameInterface {
+
     private final String myName;
     private final String myType;
     private final String myCode;
-
 
     /**
      * Create a triplet directly from the given values
@@ -17,16 +15,17 @@ public class Triplet {
         this.myCode=  code;
     }
 
-    // NOTE: provides getters, but not setters
-
+    @Override
     public String getName() {
         return this.myName;
     }
 
+    @Override
     public String getType() {
         return this.myType;
     }
 
+    @Override
     public String getCode() {
         return this.myCode;
     }

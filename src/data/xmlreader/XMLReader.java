@@ -1,18 +1,18 @@
 package data.xmlreader;
 
+import ISA.ISA;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import utility.Triplet;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class XMLReader implements XMLGeneratorInterface, XMLParseInterface {
 
@@ -34,7 +34,7 @@ public class XMLReader implements XMLGeneratorInterface, XMLParseInterface {
     }
 
     @Override
-    public List<Triplet> getInstructions() {
+    public ISA getISA() {
         List<Triplet> myList = new ArrayList<>();
         NodeList nodeList = myDocument.getElementsByTagName(INSTRUCTION_TAG);
         for (int index = 0; index < nodeList.getLength(); index ++) {
@@ -45,7 +45,7 @@ public class XMLReader implements XMLGeneratorInterface, XMLParseInterface {
             String code = getElement(element, CODE_TAG);
             myList.add(new Triplet(name, type, code));
         }
-        return myList;
+        return new ISA(myList);
     }
 
     private String getElement(Element e, String tag) {
