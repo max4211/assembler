@@ -1,6 +1,7 @@
 package model.assembler;
 
 import ISA.ISA;
+import model.filter.Filter;
 import model.instruction.Instruction;
 import model.instruction.InstructionFactory;
 import utility.io.Input;
@@ -20,6 +21,7 @@ public class Assembler implements AssemblerInterface {
 
     @Override
     public Output assemble(Input input) {
+        input = new Filter(input).filter();
         Iterator iter = input.iterator();
         Output output = new Output();
         while (iter.hasNext()) {

@@ -30,4 +30,18 @@ class AssemblerTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void testFilterAssemble() throws ParserConfigurationException, SAXException, IOException {
+        String file = "src/data/MIPS/ece350ISA.xml";
+        XMLReader reader = new XMLReader(file);
+        ISA myISA= reader.getISA();
+        Assembler myAssembler = new Assembler(myISA);
+        String text = "add $zero $at $s5";
+        Input input = new Input(text);
+        Output output = myAssembler.assemble(input);
+        String result = output.consoleOut();
+        String expected = "00000000000000110101000000000000\n";
+        assertEquals(expected, result);
+    }
+
 }
