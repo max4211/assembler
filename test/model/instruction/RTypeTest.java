@@ -16,4 +16,16 @@ class RTypeTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void testShift() {
+        String inst = "sll 0 1 21";
+        Instruction shiftInst = new RType(inst, "00011");
+        String result = shiftInst.execute();
+        String expected = "00000000000000100000101010001100";
+//        System.out.printf("expected.length() = %d\n", expected.length());
+        assertEquals(expected, result);
+    }
+
+
+
 }
