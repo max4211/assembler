@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="" />
+    <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/assembler/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/IType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/Instruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/InstructionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/JIIType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/JIType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/RType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assembler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assembler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/assembler/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/assembler/Assembler.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +24,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aM7XCNt5FWuHeoi7GAY3nnKMTV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,8 +41,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -61,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
-      <workItem from="1586534326478" duration="653000" />
+      <workItem from="1586534326478" duration="3266000" />
     </task>
     <servers />
   </component>
@@ -73,10 +99,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="362" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1586533660428" />
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586533881221">
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586570345032">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586533881221" />
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586570345032" />
     <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1586534306726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
