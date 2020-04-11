@@ -5,14 +5,6 @@ import utility.Converter;
 public class RType extends Instruction {
 
     private static final String OPCODE = "00000";
-
-    private static final String ADD = "00000";
-    private static final String SUB = "00001";
-    private static final String AND = "00010";
-    private static final String OR = "00011";
-    private static final String SLL = "00100";
-    private static final String SRA = "00101";
-
     private static final int $rd = 1;
     private static final int $rs = 2;
     private static final int $rt = 3;
@@ -22,8 +14,8 @@ public class RType extends Instruction {
     private static final String EMPTY = "00000";
 
 
-    public RType(String s) {
-        super(s);
+    public RType(String s, String opcode) {
+        super(s, opcode);
     }
 
     // TODO - add in shamt execution
@@ -36,20 +28,9 @@ public class RType extends Instruction {
         sb.append(convertIndex($rs));
         sb.append(convertIndex($rt));
         sb.append(EMPTY);
-        sb.append(parseALUop());
+        sb.append(this.myOpcode);
         sb.append(ZEROES);
         return sb.toString();
-    }
-
-    private String parseALUop() {
-        String myALUop = this.myString[aluop];
-        switch(myALUop) {
-//            case Operation.ADD.getType():
-//                return Operation.ADD.getBinary();
-//                break;
-            default:
-                return EMPTY;
-        }
     }
 
     private String convertIndex(int index) {

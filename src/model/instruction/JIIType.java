@@ -2,8 +2,8 @@ package model.instruction;
 
 public class JIIType extends Instruction {
 
-    public JIIType(String s) {
-        super(s);
+    public JIIType(String s, String opcode) {
+        super(s, opcode);
     }
 
     @Override
