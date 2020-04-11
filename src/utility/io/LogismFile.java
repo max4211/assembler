@@ -25,6 +25,7 @@ public class LogismFile extends OutputFile {
     public void save() {
         try {
             String path = this.myPath + this.myExtension;
+            Files.delete(Paths.get(path));
             Files.write(Paths.get(path),
                     this.myOutput.getList(),
                     StandardCharsets.UTF_8,
