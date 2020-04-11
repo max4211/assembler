@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/MIPS/type.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/io/LgsimFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/io/MifFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/io/OutputFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/io/Save.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/io/TxtFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/io/FileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/FileType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/io/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/io/OutputInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/OutputInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -163,7 +171,7 @@
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
       <workItem from="1586534326478" duration="15558000" />
-      <workItem from="1586625485808" duration="6424000" />
+      <workItem from="1586625485808" duration="6796000" />
     </task>
     <servers />
   </component>
@@ -182,10 +190,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="94" y="94" width="1349" height="637" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1586630050145" />
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586626808991">
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1586635990798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586626808991" />
+    <state x="575" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586635990798" />
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586571066052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -194,22 +202,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586635667027" />
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586635698988">
+    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586635703396">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586635698988" />
-    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586635698988">
+    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586635703396" />
+    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586635703396">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586635698988" />
-    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586635698987">
+    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586635703396" />
+    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586635703396">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586635698987" />
-    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586635698988">
+    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586635703396" />
+    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586635703396">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586635698988" />
+    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586635703396" />
     <state width="725" height="264" key="GridCell.Tab.1.bottom" timestamp="1586630137134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

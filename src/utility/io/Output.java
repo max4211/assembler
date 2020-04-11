@@ -21,7 +21,7 @@ public class Output implements OutputInterface, CustomList {
 
     // TODO - implement full file write (using reflection on file type to make new File?)
     @Override
-    public File write(FileType type) {
+    public File write(FileType type, String path) {
         return null;
     }
 
