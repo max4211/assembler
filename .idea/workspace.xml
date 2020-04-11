@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utility/resource/BundleInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/model/filter/FilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/filter/Filter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/filter/Filter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/io/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/io/Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/io/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/io/Output.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/MIPS/register.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/MIPS/register.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/filter/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/MIPS/type.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,49 +65,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FilterTest">
-    <configuration name="AssemblerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RTypeTest">
+    <configuration name="ITypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assembler" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.assembler.*" />
+          <option name="PATTERN" value="model.instruction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model.assembler" />
-      <option name="MAIN_CLASS_NAME" value="model.assembler.AssemblerTest" />
+      <option name="PACKAGE_NAME" value="model.instruction" />
+      <option name="MAIN_CLASS_NAME" value="model.instruction.ITypeTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assembler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.filter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.filter" />
-      <option name="MAIN_CLASS_NAME" value="model.filter.FilterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilterTest.testFilterImmediate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assembler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.filter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.filter" />
-      <option name="MAIN_CLASS_NAME" value="model.filter.FilterTest" />
-      <option name="METHOD_NAME" value="testFilterImmediate" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,6 +91,36 @@
       </extension>
       <option name="PACKAGE_NAME" value="model.instruction" />
       <option name="MAIN_CLASS_NAME" value="model.instruction.InstructionFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JIITypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assembler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.instruction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.instruction" />
+      <option name="MAIN_CLASS_NAME" value="model.instruction.JIITypeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JITypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assembler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.instruction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.instruction" />
+      <option name="MAIN_CLASS_NAME" value="model.instruction.JITypeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FilterTest" />
-        <item itemvalue="JUnit.FilterTest.testFilterImmediate" />
-        <item itemvalue="JUnit.AssemblerTest" />
-        <item itemvalue="JUnit.InstructionFactoryTest" />
         <item itemvalue="JUnit.RTypeTest" />
+        <item itemvalue="JUnit.JITypeTest" />
+        <item itemvalue="JUnit.JIITypeTest" />
+        <item itemvalue="JUnit.ITypeTest" />
+        <item itemvalue="JUnit.InstructionFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +163,7 @@
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
       <workItem from="1586534326478" duration="15558000" />
-      <workItem from="1586625485808" duration="6236000" />
+      <workItem from="1586625485808" duration="6424000" />
     </task>
     <servers />
   </component>
@@ -198,22 +190,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571066052" />
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586635452253">
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586635667027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586635452253" />
-    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586635452253">
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586635667027" />
+    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586635698988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586635452253" />
-    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586635452253">
+    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586635698988" />
+    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586635698988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586635452253" />
-    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586635452253">
+    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586635698988" />
+    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586635698987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586635452253" />
+    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586635698987" />
+    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586635698988">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586635698988" />
     <state width="725" height="264" key="GridCell.Tab.1.bottom" timestamp="1586630137134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
