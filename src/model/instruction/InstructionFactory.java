@@ -2,7 +2,7 @@ package model.instruction;
 
 import ISA.ISA;
 import exceptions.ReflectionException;
-import utility.Pair;
+import utility.tuple.Pair;
 
 import java.lang.reflect.Constructor;
 

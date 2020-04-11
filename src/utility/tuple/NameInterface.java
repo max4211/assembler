@@ -1,4 +1,4 @@
-package utility;
+package utility.tuple;
 
 public interface NameInterface {
 

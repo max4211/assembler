@@ -1,7 +1,7 @@
 package ISA;
 
-import utility.Pair;
-import utility.Triplet;
+import utility.tuple.Pair;
+import utility.tuple.Triplet;
 
 import java.util.List;
 

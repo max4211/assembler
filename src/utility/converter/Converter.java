@@ -1,4 +1,4 @@
-package utility;
+package utility.converter;
 
 public interface Converter {
 

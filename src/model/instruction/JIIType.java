@@ -1,6 +1,6 @@
 package model.instruction;
 
-import utility.Digits;
+import utility.converter.Digits;
 
 public class JIIType extends Instruction {
 

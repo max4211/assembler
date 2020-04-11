@@ -1,7 +1,7 @@
 package model.instruction;
 
-import utility.Converter;
-import utility.Digits;
+import utility.converter.Converter;
+import utility.converter.Digits;
 
 public abstract class Instruction implements InstructionInterface {
 

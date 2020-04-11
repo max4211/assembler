@@ -1,6 +1,8 @@
 package utility;
 
 import org.junit.jupiter.api.Test;
+import utility.converter.Converter;
+import utility.converter.Digits;
 
 import static org.junit.jupiter.api.Assertions.*;
 

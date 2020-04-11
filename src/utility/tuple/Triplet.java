@@ -1,4 +1,4 @@
-package utility;
+package utility.tuple;
 
 public class Triplet implements PairInterface, NameInterface {
 

@@ -3,11 +3,10 @@ package data.xmlreader;
 import ISA.ISA;
 import org.junit.jupiter.api.Test;
 import org.xml.sax.SAXException;
-import utility.Triplet;
+import utility.tuple.Triplet;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
