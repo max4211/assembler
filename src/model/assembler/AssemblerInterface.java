@@ -1,5 +1,8 @@
 package model.assembler;
 
+import utility.io.Input;
+import utility.io.Output;
+
 import java.util.List;
 
 public interface AssemblerInterface {
@@ -7,9 +10,8 @@ public interface AssemblerInterface {
     /**
      * Called by main after Assembler has been created
      * @param input file formatted list/string to assemble
-     * @return output in native java format
+     * @return output in curated format (ready to write)
      */
-    List<String> assemble(List<String> input);
+    Output assemble(Input input);
 
-    List<String> getOutput();
 }
