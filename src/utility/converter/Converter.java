@@ -10,6 +10,12 @@ public interface Converter {
         return signExtend(bin, digits.getDigits());
     }
 
+    static String binaryToHex(String s, Digits digits) {
+        int dec = Integer.parseInt(s, Base.BIN.getBase());
+        String hex = Integer.toString(dec, Base.HEX.getBase());
+        return signExtend(hex, digits.getDigits());
+    }
+
     private static String signExtend(String input, int digits) {
         StringBuilder temp = new StringBuilder();
         int pad = digits - input.length();

@@ -14,9 +14,8 @@ public interface OutputInterface {
      * Create file type based on specification
      * @param type is the type of file
      * @param path is the path to save the file to
-     * @return a file of the specified format
      */
-    File write(FileType type, String path);
+    void write(FileType type, String path);
 
     /**
      * Write all lines in output to console

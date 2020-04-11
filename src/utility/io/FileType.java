@@ -3,8 +3,8 @@ package utility.io;
 public enum FileType {
 
     MIF("Mif"),
-    LGSIM("Lgsim"),
-    TXT("Txt");
+    LOGISM("Logism"),
+    TEXT("Text");
 
     private final String myType;
 
