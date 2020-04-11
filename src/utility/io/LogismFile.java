@@ -21,21 +21,6 @@ public class LogismFile extends OutputFile {
         insertHeader(this.myHeader, this.myOutput.getList());
     }
 
-    @Override
-    public void save() {
-        try {
-            String path = this.myPath + this.myExtension;
-            Files.delete(Paths.get(path));
-            Files.write(Paths.get(path),
-                    this.myOutput.getList(),
-                    StandardCharsets.UTF_8,
-                    StandardOpenOption.CREATE,
-                    StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     private void convertOutputToHex() {
         Output output = new Output();
         for (String s: this.myOutput.getList()) {

@@ -6,8 +6,4 @@ public class MifFile extends OutputFile {
         super(path, data);
     }
 
-    @Override
-    public void save() {
-
-    }
 }

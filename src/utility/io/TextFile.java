@@ -20,18 +20,4 @@ public class TextFile extends OutputFile {
         this.myHeader = new ArrayList<>();
     }
 
-    @Override
-    public void save() {
-        try {
-            String path = this.myPath + this.myExtension;
-            Files.delete(Paths.get(path));
-            Files.write(Paths.get(path),
-                    this.myOutput.getList(),
-                    StandardCharsets.UTF_8,
-                    StandardOpenOption.CREATE,
-                    StandardOpenOption.APPEND);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
