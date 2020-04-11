@@ -1,6 +1,5 @@
 package model.instruction;
 
-import utility.Converter;
 import utility.Digits;
 
 public class RType extends Instruction {
@@ -15,7 +14,6 @@ public class RType extends Instruction {
 
     private static final String ZEROES = "00";
     private static final String EMPTY = "00000";
-
 
     public RType(String s, String opcode) {
         super(s, opcode);
