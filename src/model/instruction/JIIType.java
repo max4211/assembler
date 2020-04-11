@@ -1,6 +1,10 @@
 package model.instruction;
 
+import utility.Digits;
+
 public class JIIType extends Instruction {
+
+    private static final String JIIZeroes = "0000000000000000000000";
 
     public JIIType(String s, String opcode) {
         super(s, opcode);
@@ -8,7 +12,11 @@ public class JIIType extends Instruction {
 
     @Override
     public String execute() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.myOpcode);
+        sb.append(convertIndex($rd, Digits.REGISTER));
+        sb.append(JIIZeroes);
+        return sb.toString();
     }
 }
 
