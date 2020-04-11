@@ -31,6 +31,7 @@ public class Filter implements FilterInterface {
         for (String s: input) {
             s = filterComments(s);
             s = filterWhitespace(s);
+            s = filterTabs(s);
             s = filterCommas(s);
             s = filterRegisters(s);
             s = filterImmediate(s);
@@ -59,6 +60,24 @@ public class Filter implements FilterInterface {
 
     private String filterWhitespace(String input) {
         return input.trim();
+    }
+
+    private String filterTabs(String input) {
+        StringBuilder sb = new StringBuilder();
+        int count = 0;
+        for (char c: input.toCharArray()) {
+            if (c == ' ') {
+                count ++;
+                if (count == 1)
+                    sb.append(c);
+            }
+            else {
+                sb.append(c);
+                count = 0;
+            }
+        }
+//        input.replace("\t", "");
+        return sb.toString();
     }
 
     private String filterCommas(String input) {

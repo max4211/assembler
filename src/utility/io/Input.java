@@ -1,9 +1,11 @@
 package utility.io;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 
 public class Input implements Iterable, CustomList{
 
@@ -20,6 +22,14 @@ public class Input implements Iterable, CustomList{
     // TODO - implement input construction from a file
     public Input(File file) {
         this.myInput = new ArrayList<>();
+        try {
+            Scanner scan = new Scanner(file);
+            while (scan.hasNextLine())
+                this.myInput.add(scan.nextLine());
+            scan.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

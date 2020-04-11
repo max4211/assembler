@@ -101,4 +101,13 @@ class FilterTest {
         }
     }
 
+    @Test
+    void testTabFilter() {
+        String input = "addi    $1, $0, 1";
+        String expected = "addi 1 0 1";
+        Filter filter = new Filter(input);
+        String result = filter.filter().getList().get(0);
+        assertEquals(expected, result);
+    }
+
 }

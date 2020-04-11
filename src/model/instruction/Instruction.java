@@ -17,7 +17,12 @@ public abstract class Instruction implements InstructionInterface {
     protected static final String EMPTY = "00000";
 
     public Instruction(String s, String opcode) {
-        this.myString = s.split(SPACE);
+        this.myString = s.split("\\s+");
+        this.myOpcode = opcode;
+    }
+
+    public Instruction(String[] s, String opcode) {
+        this.myString = s;
         this.myOpcode = opcode;
     }
 

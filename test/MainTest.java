@@ -8,6 +8,7 @@ import utility.io.Input;
 import utility.io.Output;
 
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +19,8 @@ class MainTest {
 
     @Test
     void testMain() throws ParserConfigurationException, SAXException, IOException {
-        String file = "src/data/MIPS/ece350ISA.xml";
-        XMLReader reader = new XMLReader(file);
+        String ISAfile = "src/data/MIPS/ece350ISA.xml";
+        XMLReader reader = new XMLReader(ISAfile);
         ISA myISA = reader.getISA();
         Assembler myAssembler = new Assembler(myISA);
         List<String> text = new ArrayList<>(List.of(
@@ -31,6 +32,19 @@ class MainTest {
         Input input = new Input(text);
         Output output = myAssembler.assemble(input);
         String path = "data/test/main";
+        output.write(FileType.LOGISM, path);
+    }
+
+    @Test
+    void testMainFile() throws ParserConfigurationException, SAXException, IOException {
+        String ISAfile = "src/data/MIPS/ece350ISA.xml";
+        XMLReader reader = new XMLReader(ISAfile);
+        ISA myISA = reader.getISA();
+        Assembler myAssembler = new Assembler(myISA);
+        File text = new File("data/test/fullALUtest.s");
+        Input input = new Input(text);
+        Output output = myAssembler.assemble(input);
+        String path = "data/test/fullALUtest";
         output.write(FileType.LOGISM, path);
     }
 }

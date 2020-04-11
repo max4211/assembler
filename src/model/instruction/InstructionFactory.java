@@ -21,7 +21,7 @@ public class InstructionFactory implements FactoryInterface {
     @Override
     public Instruction createInstruction(String input) {
         try {
-            String inst = input.split(SPACE)[ZERO];
+            String inst = input.split("\\s+")[ZERO];
             Pair pair = this.myISA.getPair(inst);
             Class clazz = Class.forName(createInstructionPath(pair.getType() + TYPE_SUFFX));
             Constructor ctor = clazz.getConstructor(String.class, String.class);

@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test/fullALUtest.lgsim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test/fullALUtest.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test/srcmain.lgsim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/main.lgsim" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/main.lgsim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/assembler/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/baseConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/lgsim2bin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/mif2Hex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/mif2lgsim.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/assembler/Assembler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/assembler/Assembler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/assembler/model/assembler/AssemblerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/model/assembler/AssemblerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/io/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/io/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/assembler/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/MainTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/assembler/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/assembler/Assembler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/assembler/AssemblerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/assembler/AssemblerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/filter/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/filter/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/instruction/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/Instruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/io/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/io/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/filter/FilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/filter/FilterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +57,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,32 +83,32 @@
       <recent name="C:\Users\smith\Desktop\ECE350\assembler\data\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
-    <configuration name="AssemblerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in assembler">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="assembler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.assembler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.assembler" />
-      <option name="MAIN_CLASS_NAME" value="model.assembler.AssemblerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogismFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in assembler" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assembler" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assembler" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utility.io.*" />
+          <option name="PATTERN" value="model.filter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="utility.io" />
-      <option name="MAIN_CLASS_NAME" value="utility.io.LogismFileTest" />
+      <option name="PACKAGE_NAME" value="model.filter" />
+      <option name="MAIN_CLASS_NAME" value="model.filter.FilterTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,43 +123,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.testMainFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assembler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.instruction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.instruction" />
-      <option name="MAIN_CLASS_NAME" value="model.instruction.RTypeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assembler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utility.io.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="utility.io" />
-      <option name="MAIN_CLASS_NAME" value="utility.io.TextFileTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="testMainFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in assembler" />
+        <item itemvalue="JUnit.MainTest.testMainFile" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.AssemblerTest" />
-        <item itemvalue="JUnit.LogismFileTest" />
-        <item itemvalue="JUnit.TextFileTest" />
-        <item itemvalue="JUnit.RTypeTest" />
+        <item itemvalue="JUnit.FilterTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +155,8 @@
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
       <workItem from="1586534326478" duration="15558000" />
-      <workItem from="1586625485808" duration="9651000" />
+      <workItem from="1586625485808" duration="10201000" />
+      <workItem from="1586642595612" duration="946000" />
     </task>
     <servers />
   </component>
@@ -206,38 +191,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586635667027" />
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom" timestamp="1586642015257">
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1586643627722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586642015257" />
-    <state width="1493" height="293" key="GridCell.Tab.0.center" timestamp="1586642015257">
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586643627722" />
+    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1586643627722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586642015257" />
-    <state width="1493" height="293" key="GridCell.Tab.0.left" timestamp="1586642015257">
+    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586643627722" />
+    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1586643627722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586642015257" />
-    <state width="1493" height="293" key="GridCell.Tab.0.right" timestamp="1586642015257">
+    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586643627722" />
+    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1586643627722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="293" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586642015257" />
-    <state width="725" height="264" key="GridCell.Tab.1.bottom" timestamp="1586630137134">
+    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586643627722" />
+    <state width="725" height="264" key="GridCell.Tab.1.bottom" timestamp="1586642570100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="264" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586630137134" />
-    <state width="725" height="264" key="GridCell.Tab.1.center" timestamp="1586630137134">
+    <state width="725" height="264" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586642570100" />
+    <state width="725" height="264" key="GridCell.Tab.1.center" timestamp="1586642570100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="264" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586630137134" />
-    <state width="725" height="264" key="GridCell.Tab.1.left" timestamp="1586630137134">
+    <state width="725" height="264" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586642570100" />
+    <state width="725" height="264" key="GridCell.Tab.1.left" timestamp="1586642570100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="264" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586630137134" />
-    <state width="725" height="264" key="GridCell.Tab.1.right" timestamp="1586630137134">
+    <state width="725" height="264" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586642570100" />
+    <state width="725" height="264" key="GridCell.Tab.1.right" timestamp="1586642570100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="264" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586630137134" />
+    <state width="725" height="264" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586642570100" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1586570609941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
