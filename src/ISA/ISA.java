@@ -22,4 +22,9 @@ public class ISA implements ISAInterface {
         }
         return null;
     }
+
+    @Override
+    public Triplet get(int index) {
+        return this.myISA.get(index);
+    }
 }

@@ -1,5 +1,6 @@
 package data.xmlreader;
 
+import ISA.ISA;
 import org.junit.jupiter.api.Test;
 import org.xml.sax.SAXException;
 import utility.Triplet;
@@ -16,11 +17,11 @@ class XMLReaderTest {
     void testXMLRead() throws ParserConfigurationException, SAXException, IOException {
         String file = "src/data/MIPS/ece350ISA.xml";
         XMLReader reader = new XMLReader(file);
-        List<Triplet> list = reader.getInstructions();
+        ISA myISA= reader.getISA();
         Triplet addTriplet = new Triplet("add", "R", "00000");
         Triplet addiTriplet = new Triplet("addi", "I", "00101");
-        assertEquals(list.get(0).toString(), addTriplet.toString());
-        assertEquals(list.get(1).toString(), addiTriplet.toString());
+        assertEquals(myISA.get(0).toString(), addTriplet.toString());
+        assertEquals(myISA.get(1).toString(), addiTriplet.toString());
     }
 
 }

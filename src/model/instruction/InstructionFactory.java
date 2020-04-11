@@ -23,8 +23,8 @@ public class InstructionFactory implements FactoryInterface {
             String inst = input.split(SPACE)[ZERO];
             Pair pair = this.myISA.getPair(inst);
             Class clazz = Class.forName(createInstructionPath(input));
-            Constructor ctor = clazz.getConstructor(String.class);
-            return (Instruction) ctor.newInstance();
+            Constructor ctor = clazz.getConstructor(String.class, String.class);
+            return (Instruction) ctor.newInstance(inst, pair.getCode());
         } catch (Exception e) {
             throw new ReflectionException(e);
         }

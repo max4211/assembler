@@ -1,6 +1,7 @@
 package ISA;
 
 import utility.Pair;
+import utility.Triplet;
 
 public interface ISAInterface {
 
@@ -10,5 +11,12 @@ public interface ISAInterface {
      * @return
      */
     Pair getPair(String inst);
+
+    /**
+     * List functionality, get elements at an index
+     * @param index is the point of element
+     * @return triplet corresponding to that element
+     */
+    Triplet get(int index);
 
 }

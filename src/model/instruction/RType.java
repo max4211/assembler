@@ -1,6 +1,7 @@
 package model.instruction;
 
 import utility.Converter;
+import utility.Digits;
 
 public class RType extends Instruction {
 
@@ -34,6 +35,6 @@ public class RType extends Instruction {
     }
 
     private String convertIndex(int index) {
-        return Converter.intToBinary(this.myString[index]);
+        return Converter.intToBinary(this.myString[index], Digits.REGISTER);
     }
 }
