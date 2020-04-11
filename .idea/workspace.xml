@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1e8b9e1-0091-46ba-80d1-ed0c303a0397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utility/Digits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/model/instruction/InstructionFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/utility/ConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/instruction/ITypeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/Triplet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/XMLParseInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/XMLParseInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/XMLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/data/xmlreader/XMLReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/IType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/IType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/Instruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/InstructionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/InstructionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIIType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIIType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/JIType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/assembler/model/instruction/RType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/model/instruction/RType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assembler/utility/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/utility/Converter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/assembler/data/xmlreader/XMLReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/data/xmlreader/XMLReaderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/assembler/model/instruction/RTypeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/assembler/model/instruction/RTypeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ISA/ISA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ISA/ISA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ISA/ISAInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ISA/ISAInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/instruction/IType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/IType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/instruction/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/InstructionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/instruction/RType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/instruction/RType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/xmlreader/XMLReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/xmlreader/XMLReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/instruction/RTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/instruction/RTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Digits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Digits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,22 +63,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="utility" />
       <recent name="model.instruction" />
+      <recent name="utility" />
       <recent name="data.xmlreader" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RTypeTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="assembler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ITypeTest">
     <configuration name="mif2lgsim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mif2lgsim" />
       <module name="assembler" />
@@ -112,6 +89,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="utility" />
       <option name="MAIN_CLASS_NAME" value="utility.ConverterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assembler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.instruction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.instruction" />
+      <option name="MAIN_CLASS_NAME" value="model.instruction.ITypeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ITypeTest" />
         <item itemvalue="JUnit.RTypeTest" />
         <item itemvalue="JUnit.ConverterTest" />
         <item itemvalue="JUnit.XMLReaderTest" />
         <item itemvalue="Application.mif2lgsim" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586533645808</updated>
       <workItem from="1586533647258" duration="659000" />
-      <workItem from="1586534326478" duration="11529000" />
+      <workItem from="1586534326478" duration="11994000" />
     </task>
     <servers />
   </component>
@@ -195,22 +187,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="116" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586571066052" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1586619466322">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1586619923130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586619466322" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1586619466322">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586619923130" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1586619923129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586619466322" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1586619466322">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586619923129" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1586619923129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586619466322" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1586619466322">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586619923129" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1586619923129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586619466322" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586619923129" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1586619190459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -235,9 +227,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="114" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1586571058972" />
-    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586618843372">
+    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586619733536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586618843372" />
+    <state x="157" y="116" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1586619733536" />
+    <state x="426" y="188" key="run.anything.popup" timestamp="1586619684088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="188" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586619684088" />
   </component>
 </project>

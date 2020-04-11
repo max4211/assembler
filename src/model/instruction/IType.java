@@ -1,6 +1,10 @@
 package model.instruction;
 
+import utility.Digits;
+
 public class IType extends Instruction {
+
+    private static final int N = 3;
 
     public IType(String s, String opcode) {
         super(s, opcode);
@@ -8,6 +12,11 @@ public class IType extends Instruction {
 
     @Override
     public String execute() {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.myOpcode);
+        sb.append(convertIndex($rd, Digits.REGISTER));
+        sb.append(convertIndex($rs, Digits.REGISTER));
+        sb.append(convertIndex(N, Digits.N));
+        return sb.toString();
     }
 }
