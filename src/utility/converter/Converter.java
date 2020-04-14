@@ -16,7 +16,7 @@ public interface Converter {
         return signExtend(hex, digits.getDigits());
     }
 
-    private static String signExtend(String input, int digits) {
+    static String signExtend(String input, int digits) {
         StringBuilder temp = new StringBuilder();
         int pad = digits - input.length();
         for (int i = 0; i < pad; i ++) {
