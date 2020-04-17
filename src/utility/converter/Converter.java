@@ -7,13 +7,20 @@ public class Converter {
     private final String myInputValue;
     private final Base myInputBase;
     private final Base myOutputBase;
-    private final int myDigits;
+    private int myDigits;
 
     public Converter(String inputValue, String inputBase, String outputBase, String digits) {
         this.myInputValue = inputValue;
         this.myInputBase = Base.valueOf(inputBase);
         this.myOutputBase = Base.valueOf(outputBase);
         this.myDigits = Integer.parseInt(digits);
+    }
+
+    public Converter(String inputValue, String inputBase, String outputBase) {
+        this.myInputValue = inputValue;
+        this.myInputBase = Base.valueOf(inputBase);
+        this.myOutputBase = Base.valueOf(outputBase);
+        this.myDigits = 1;
     }
 
     // TODO - refactor into an interface (redo converter interface)
