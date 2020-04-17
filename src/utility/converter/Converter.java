@@ -1,6 +1,6 @@
 package utility.converter;
 
-public class Converter {
+public class Converter implements ConverterInterface {
 
     private static final int ZERO = 0;
 
@@ -23,7 +23,7 @@ public class Converter {
         this.myDigits = 1;
     }
 
-    // TODO - refactor into an interface (redo converter interface)
+    @Override
     public String execute() {
         int dec = Integer.parseInt(this.myInputValue, this.myInputBase.getBase());
         String bin = Integer.toString(dec, this.myOutputBase.getBase());

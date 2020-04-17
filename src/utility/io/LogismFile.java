@@ -1,16 +1,12 @@
 package utility.io;
 
-import utility.converter.Converter;
-import utility.converter.ConverterInterface;
-import utility.converter.Digits;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class LogismFile extends OutputFile {
 
-    private static final String OUTPUT_BASE = "BIN";
-    private static final String DIGITS = "32";
+    private static final String OUTPUT_BASE = "HEX";
+    private static final String DIGITS = "8";
 
     public LogismFile(String path, Output data) {
         super(path, data);
