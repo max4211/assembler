@@ -1,27 +1,34 @@
 package utility.converter;
 
-public interface Converter {
+public class Converter {
 
-    static final String ZERO = "0";
+    private static final int ZERO = 0;
 
-    static String intToBinary(String s, Digits digits) {
-        int dec = Integer.parseInt(s, Base.DEC.getBase());
-        String bin = Integer.toString(dec, Base.BIN.getBase());
-        return signExtend(bin, digits.getDigits());
+    private final String myInputValue;
+    private final Base myInputBase;
+    private final Base myOutputBase;
+    private final int myDigits;
+
+    public Converter(String inputValue, String inputBase, String outputBase, String digits) {
+        this.myInputValue = inputValue;
+        this.myInputBase = Base.valueOf(inputBase);
+        this.myOutputBase = Base.valueOf(outputBase);
+        this.myDigits = Integer.parseInt(digits);
     }
 
-    static String binaryToHex(String s, Digits digits) {
-        int dec = Integer.parseInt(s, Base.BIN.getBase());
-        String hex = Integer.toString(dec, Base.HEX.getBase());
-        return signExtend(hex, digits.getDigits());
+    // TODO - refactor into an interface (redo converter interface)
+    public String execute() {
+        int dec = Integer.parseInt(this.myInputValue, this.myInputBase.getBase());
+        String bin = Integer.toString(dec, this.myOutputBase.getBase());
+        return signExtend(bin, this.myDigits);
     }
 
-    static String signExtend(String input, int digits) {
+    private String signExtend(String input, int digits) {
         StringBuilder temp = new StringBuilder();
         int pad = digits - input.length();
-        for (int i = 0; i < pad; i ++) {
+        for (int i = 0; i < pad; i ++)
             temp.append(ZERO);
-        }
         return temp.toString() + input;
     }
+
 }

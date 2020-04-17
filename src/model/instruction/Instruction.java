@@ -1,6 +1,6 @@
 package model.instruction;
 
-import utility.converter.Converter;
+import utility.converter.ConverterInterface;
 import utility.converter.Digits;
 
 public abstract class Instruction implements InstructionInterface {
@@ -27,6 +27,6 @@ public abstract class Instruction implements InstructionInterface {
     }
 
     protected String convertIndex(int index, Digits digits) {
-        return Converter.intToBinary(this.myString[index], digits);
+        return ConverterInterface.intToBinary(this.myString[index], digits);
     }
 }

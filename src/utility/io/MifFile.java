@@ -1,6 +1,6 @@
 package utility.io;
 
-import utility.converter.Converter;
+import utility.converter.ConverterInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class MifFile extends OutputFile {
         List<String> list = this.myOutput.getList();
         for (int i = 0; i < list.size(); i ++) {
             String bits = list.get(i);
-            String prefix = Converter.signExtend(Integer.toString(i), NUM_BITS);
+            String prefix = ConverterInterface.signExtend(Integer.toString(i), NUM_BITS);
             String line = createLine(prefix, bits);
             output.add(line);
             output.add(LINE_GAP);
@@ -53,8 +53,8 @@ public class MifFile extends OutputFile {
         final String OPEN = "[";
         final String MID = "..";
         final String CLOSE = "]";
-        String bits = Converter.signExtend("0", 32);
-        String start = Converter.signExtend(Integer.toString(size), NUM_BITS);
+        String bits = ConverterInterface.signExtend("0", 32);
+        String start = ConverterInterface.signExtend(Integer.toString(size), NUM_BITS);
         String prefix = OPEN + start + MID + FINAL_LINE + CLOSE;
         return createLine(prefix, bits);
     }

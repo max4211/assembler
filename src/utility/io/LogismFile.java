@@ -1,13 +1,8 @@
 package utility.io;
 
-import utility.converter.Converter;
+import utility.converter.ConverterInterface;
 import utility.converter.Digits;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +19,7 @@ public class LogismFile extends OutputFile {
     private void convertOutputToHex() {
         Output output = new Output();
         for (String s: this.myOutput.getList()) {
-            output.add(Converter.binaryToHex(s, Digits.LGSIM));
+            output.add(ConverterInterface.binaryToHex(s, Digits.LGSIM));
         }
         this.myOutput = output;
     }
