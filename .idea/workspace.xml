@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="700dd422-6866-401c-ba96-3367dd3d7690" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/down-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/jab_headshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/duke_ece.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/pratt_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +132,8 @@
       <workItem from="1587140190537" duration="5674000" />
       <workItem from="1587170976503" duration="162000" />
       <workItem from="1587171156270" duration="229000" />
-      <workItem from="1587171410225" duration="2706000" />
+      <workItem from="1587171410225" duration="2839000" />
+      <workItem from="1587219336311" duration="1997000" />
     </task>
     <servers />
   </component>
@@ -149,22 +152,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="415" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1587148669810" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1587172160438">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1587186624964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587172160438" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1587172160438">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1587186624964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587172160438" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1587172160438">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1587186624964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587172160438" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1587172160438">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1587186624964">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587172160438" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1587147469721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -185,6 +188,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="307" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1587140433353" />
+    <state x="195" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587237061753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="195" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587237061753" />
     <state x="541" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587147109698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
