@@ -14,7 +14,6 @@ import java.util.List;
 
 public class MainAssembler {
 
-    // TODO - input string params - file output type, radix (lgsim is don't care)
     public static void main (String[] args)  {
         try {
             // CODE WHICH WILL BE USER INPUT PARAMETERS
