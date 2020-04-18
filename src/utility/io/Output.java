@@ -36,6 +36,18 @@ public class Output implements OutputInterface, CustomList {
     }
 
     @Override
+    public void write(String fileType, String outputBase, String digits, String outputPath) {
+        try {
+            Class clazz = Class.forName(createOutputFilePath(fileType));
+            Constructor ctor = clazz.getConstructor(String.class, String.class, String.class, Output.class);
+            OutputFile file = (OutputFile) ctor.newInstance(outputPath, outputBase, digits, this);
+            file.save();
+        } catch (Exception e) {
+            throw new ReflectionException(e);
+        }
+    }
+
+    @Override
     public String consoleOut() {
         StringBuilder sb = new StringBuilder();
         for (String s: this.myOutput) {
@@ -49,7 +61,7 @@ public class Output implements OutputInterface, CustomList {
         return this.myOutput;
     }
 
-    private String createOutputFilePath(String filetype) {
-        return String.format("%s.%s%s", OUTPUTFILE_PATH, filetype, FILE_TAG);
+    private String createOutputFilePath(String fileType) {
+        return String.format("%s.%s%s", OUTPUTFILE_PATH, fileType, FILE_TAG);
     }
 }

@@ -20,10 +20,14 @@ public class MainAssembler {
             // CODE WHICH WILL BE USER INPUT PARAMETERS
             String ISAfile = "src/data/MIPS/ece350ISA.xml";
             String inputPath = "data/test/fullALUtest.s";
-            String outputPath = "data/test/srcmain";
-            File text = new File(inputPath);
+            String outputPath = "data/test/mainassembler";
+
+            String fileType = "Text";
+            String outputBase = "BIN";
+            String digits = "32";
 
             // MODEL CODE TO GET TO OUTPUT
+            File text = new File(inputPath);
             XMLReader reader = new XMLReader(ISAfile);
             ISA myISA = reader.getISA();
             Assembler myAssembler = new Assembler(myISA);
@@ -31,7 +35,7 @@ public class MainAssembler {
 
             // FINAL OUTPUT CONSTRUCTION AND WRITE
             Output output = myAssembler.assemble(input);
-            output.write(FileType.LOGISM, outputPath);
+            output.write(fileType, outputBase, digits, outputPath);
         } catch (ParserConfigurationException | SAXException | IOException e) {
             System.out.println("Could not assemble file");
             e.printStackTrace();

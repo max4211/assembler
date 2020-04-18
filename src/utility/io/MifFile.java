@@ -14,17 +14,18 @@ public class MifFile extends OutputFile {
     private static final int NUM_BITS = 4;
     private static final int FINAL_LINE = 4095;
 
-    public MifFile(String path, Output data) {
+    public MifFile(String path, String outputBase, String digits, Output data) {
         super(path, data);
         this.myExtension = ".mif";
         this.myHeader = new ArrayList<>(List.of(
                 "DEPTH = 4096;",
                 "WIDTH = 32;",
                 "ADDRESS_RADIX = DEC;",
-                "DATA_RADIX = BIN;",
+                "DATA_RADIX = " + outputBase + ";",
                 "CONTENT",
                 "BEGIN"
         ));
+        convertOutputToBase(outputBase, digits);
         addPrefix();
         insertHeader(this.myHeader, this.myOutput.getList());
     }
