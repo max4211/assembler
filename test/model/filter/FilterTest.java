@@ -110,4 +110,13 @@ class FilterTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    void testNOPFilter() {
+        String input = "nop";
+        String expected = "nop";
+        Filter filter = new Filter(input);
+        String result = filter.filter().getList().get(0);
+        assertEquals(expected, result);
+    }
+
 }

@@ -60,4 +60,16 @@ class InstructionFactoryTest {
         assertEquals(expected, jrInst.execute());
     }
 
+    @Test
+    void testNOPTypeCreate() throws ParserConfigurationException, SAXException, IOException {
+        String file = "src/data/MIPS/ece350ISA.xml";
+        XMLReader reader = new XMLReader(file);
+        ISA myISA= reader.getISA();
+        InstructionFactory factory = new InstructionFactory(myISA);
+        String inst = "nop";
+        String expected = "00000000000000000000000000000000";
+        Instruction nop = factory.createInstruction(inst);
+        assertEquals(expected, nop.execute());
+    }
+
 }

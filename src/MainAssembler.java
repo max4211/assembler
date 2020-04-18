@@ -18,12 +18,12 @@ public class MainAssembler {
         try {
             // CODE WHICH WILL BE USER INPUT PARAMETERS
             String ISAfile = "src/data/MIPS/ece350ISA.xml";
-            String inputPath = "data/test/fullALUtest.s";
-            String outputPath = "data/test/mainassembler";
+            String inputPath = "data/test/noptest.s";
+            String outputPath = "data/test/noptest";
 
-            String fileType = "Text";
-            String outputBase = "BIN";
-            String digits = "32";
+            String fileType = "Logism";
+            String outputBase = "HEX";
+            String digits = "8";
 
             // MODEL CODE TO GET TO OUTPUT
             File text = new File(inputPath);

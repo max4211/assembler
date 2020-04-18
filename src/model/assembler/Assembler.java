@@ -26,7 +26,7 @@ public class Assembler implements AssemblerInterface {
         Output output = new Output();
         while (iter.hasNext()) {
             String text = (String) iter.next();
-            Instruction instruction = myFactory.createInstruction(text);
+            Instruction instruction = this.myFactory.createInstruction(text);
             output.add(instruction.execute());
         }
         return output;
