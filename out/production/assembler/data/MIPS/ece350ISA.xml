@@ -80,4 +80,9 @@
         <Type>JI</Type>
         <Code>10101</Code>
     </Instruction>
+    <Instruction>
+        <Name>nop</Name>
+        <Type>NOP</Type>
+        <Code>00000</Code>
+    </Instruction>
 </ISA>

@@ -22,7 +22,11 @@
     <p>Lab TA: David Miron</p>
     <p>Professor: Dr. Board</p>
 </div>
+<div class="instructions">
+    <p>Please upload a mips file (.s format), select the desired output base and file type and then hit Translate</p>
+</div>
 <div class="form-div" id="translate-form">
+    <h1>Assembler</h1>
     <form action="">
         <label for="myfile">Select a file:</label>
         <input type="file" id="myfile" name="myfile"><br>
@@ -41,16 +45,17 @@
     </form>
 </div>
 <div class="instructions">
-    <p>Please upload a mips file (.s format), select the desired output base and file type and then hit Translate</p>
+    <p>Please enter the number you would like to convert, and select its input base and target base, then select Convert.</p>
 </div>
 <div class="form-div" id="convert-form">
+    <h1>Base Converter</h1>
     <form action="">
         <p>Number:</p>
         <input type="text" id="input-convert">
         <p>From base:</p>
         <select id="input-base">
-            <option value="hex">16 (hex)</option>
             <option value="bin">2 (binary)</option>
+            <option value="hex">16 (hex)</option>
             <option value="dec">10 (decimal)</option>
         </select><br>
         <p>To base:</p>
@@ -63,9 +68,6 @@
         <input type="text" id="output-convert" name="myfile"><br>
         <input type="submit" value="Convert" id="convert-tag" class="submit-btn">
     </form>
-</div>
-<div class="instructions">
-    <p>Please enter the number you would like to convert, and select its input base and target base, then select Convert.</p>
 </div>
 </body>
 

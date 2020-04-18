@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="700dd422-6866-401c-ba96-3367dd3d7690" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/img/duke_ece.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/img/pratt_banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/instruction/NOPType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/model/instruction/NOPTypeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/img/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/assembler/data/MIPS/ece350ISA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/assembler/data/MIPS/ece350ISA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/MIPS/ece350ISA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/MIPS/ece350ISA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
     </list>
@@ -18,10 +18,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -60,13 +60,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="model.instruction" />
       <recent name="utility.converter" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainConverter">
+  <component name="RunManager" selected="JUnit.NOPTypeTest.execute">
     <configuration name="MainAssembler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainAssembler" />
       <module name="assembler" />
@@ -89,16 +90,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainAssemblerTest.testMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assembler" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainAssemblerTest" />
-      <option name="METHOD_NAME" value="testMain" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainAssemblerTest.testMainFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assembler" />
       <option name="PACKAGE_NAME" value="" />
@@ -109,13 +100,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NOPTypeTest.execute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assembler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.instruction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.instruction" />
+      <option name="MAIN_CLASS_NAME" value="model.instruction.NOPTypeTest" />
+      <option name="METHOD_NAME" value="execute" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NOPTypeTest.execute" />
         <item itemvalue="Application.MainConverter" />
         <item itemvalue="Application.MainAssembler" />
         <item itemvalue="JUnit.All in assembler" />
         <item itemvalue="JUnit.MainAssemblerTest.testMainFile" />
-        <item itemvalue="JUnit.MainAssemblerTest.testMain" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +140,7 @@
       <workItem from="1587170976503" duration="162000" />
       <workItem from="1587171156270" duration="229000" />
       <workItem from="1587171410225" duration="2839000" />
-      <workItem from="1587219336311" duration="1997000" />
+      <workItem from="1587219336311" duration="3263000" />
     </task>
     <servers />
   </component>
@@ -152,22 +159,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="415" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1587148669810" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1587186624964">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1587239535899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1587186624964">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587239535899" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1587239535899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1587186624964">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587239535899" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1587239535899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1587186624964">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587239535899" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1587239535899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587186624964" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587239535899" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1587147469721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -192,10 +199,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="195" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587237061753" />
-    <state x="541" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587147109698">
+    <state x="541" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587239466169">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="541" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1587147109698" />
+    <state x="541" y="132" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1587239466169" />
     <state x="462" y="144" width="613" height="536" key="find.popup" timestamp="1587148728488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
