@@ -60,6 +60,15 @@ public abstract class OutputFile implements Save {
         this.myOutput = output;
     }
 
+    protected void convertOutputToBase(String outputBase) {
+        Output output = new Output();
+        for (String s: this.myOutput.getList()) {
+            Converter c = new Converter(s, INPUT_BASE, outputBase);
+            output.add(c.execute());
+        }
+        this.myOutput = output;
+    }
+
     protected void insertHeader(List<String> header, List<String> data) {
         Output output = new Output();
         for (String s: header)

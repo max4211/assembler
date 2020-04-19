@@ -21,4 +21,12 @@ public class LogismFile extends OutputFile {
         insertHeader(this.myHeader, this.myOutput.getList());
     }
 
+    public LogismFile(String outputBase, Output data) {
+        super(data);
+        this.myExtension = ".lgsim";
+        this.myHeader = new ArrayList<>(List.of("v2.0 raw"));
+        convertOutputToBase(outputBase);
+        insertHeader(this.myHeader, this.myOutput.getList());
+    }
+
 }

@@ -59,6 +59,17 @@ public class Output implements OutputInterface, CustomList {
         }
     }
 
+    public List<String> write(String fileType, String outputBase) {
+        try {
+            Class clazz = Class.forName(createOutputFilePath(fileType));
+            Constructor ctor = clazz.getConstructor(String.class, Output.class);
+            OutputFile file = (OutputFile) ctor.newInstance(outputBase, this);
+            return file.saveFile();
+        } catch (Exception e) {
+            throw new ReflectionException(e);
+        }
+    }
+
     @Override
     public String consoleOut() {
         StringBuilder sb = new StringBuilder();

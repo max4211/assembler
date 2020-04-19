@@ -21,4 +21,11 @@ public class TextFile extends OutputFile {
         convertOutputToBase(outputBase, digits);
     }
 
+    public TextFile(String outputBase, Output data) {
+        super(data);
+        this.myExtension = EXTENSION;
+        this.myHeader = new ArrayList<>();
+        convertOutputToBase(outputBase);
+    }
+
 }

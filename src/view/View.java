@@ -174,7 +174,7 @@ public class View extends Application {
         Label selectLabel = new Label("Select a to assemble file:");
         gridPane.add(selectLabel, 0, 3);
 
-        Button fileChooser = createAssembleButton(stage, outputTypeBox, digitsField, outputBaseBox);
+        Button fileChooser = new AssembleButton(stage, outputTypeBox, digitsField, outputBaseBox);
         gridPane.add(fileChooser, 1, 3);
 
         return gridPane;
