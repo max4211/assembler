@@ -33,6 +33,7 @@ import utility.io.Input;
 import utility.io.Output;
 
 import java.io.*;
+import java.util.List;
 
 public class View extends Application {
 
@@ -217,10 +218,36 @@ public class View extends Application {
 
                             // FINAL OUTPUT CONSTRUCTION AND WRITE
                             Output output = myAssembler.assemble(input);
-                            output.write((String) outputType.getValue(), (String) outputBase.getValue(), digits.getText(), outputPath);
+                            List<String> text = output.write((String) outputType.getValue(), (String) outputBase.getValue(), digits.getText());
+                            FileChooser fc = new FileChooser();
+                            FileChooser.ExtensionFilter exFilter = createExtensionFilters((String) outputType.getValue());
+                            fc.getExtensionFilters().add(exFilter);
+                            File file = fc.showSaveDialog(stage);
+                            if (file != null)
+                                saveTextToFile(text, file);
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
+                    }
+
+                    private void saveTextToFile(List<String> text, File file) {
+                        try {
+                            PrintWriter writer = new PrintWriter(file);
+                            for (String s: text)
+                                writer.println(s);
+                            writer.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    private FileChooser.ExtensionFilter createExtensionFilters(String value) {
+                        if (value.equals("Logism"))
+                            return new FileChooser.ExtensionFilter("LOGISM files (*lgsim)", "*.lgsim");
+                        else if (value.equals("Mif"))
+                            return new FileChooser.ExtensionFilter("MIF files (*mif)", "*.mif");
+                        else
+                            return new FileChooser.ExtensionFilter("TXT files (*txt)", "*.txt");
                     }
                 }
         );

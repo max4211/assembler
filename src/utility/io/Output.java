@@ -2,6 +2,7 @@ package utility.io;
 
 import exceptions.ReflectionException;
 
+import java.io.File;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +43,17 @@ public class Output implements OutputInterface, CustomList {
             Constructor ctor = clazz.getConstructor(String.class, String.class, String.class, Output.class);
             OutputFile file = (OutputFile) ctor.newInstance(outputPath, outputBase, digits, this);
             file.save();
+        } catch (Exception e) {
+            throw new ReflectionException(e);
+        }
+    }
+
+    public List<String> write(String fileType, String outputBase, String digits) {
+        try {
+            Class clazz = Class.forName(createOutputFilePath(fileType));
+            Constructor ctor = clazz.getConstructor(String.class, String.class, Output.class);
+            OutputFile file = (OutputFile) ctor.newInstance(outputBase, digits, this);
+            return file.saveFile();
         } catch (Exception e) {
             throw new ReflectionException(e);
         }

@@ -30,6 +30,22 @@ public class MifFile extends OutputFile {
         insertHeader(this.myHeader, this.myOutput.getList());
     }
 
+    public MifFile(String outputBase, String digits, Output data) {
+        super(data);
+        this.myExtension = ".mif";
+        this.myHeader = new ArrayList<>(List.of(
+                "DEPTH = 4096;",
+                "WIDTH = " + digits + ";",
+                "ADDRESS_RADIX = DEC;",
+                "DATA_RADIX = " + outputBase + ";",
+                "CONTENT",
+                "BEGIN"
+        ));
+        convertOutputToBase(outputBase, digits);
+        addPrefix();
+        insertHeader(this.myHeader, this.myOutput.getList());
+    }
+
     private void addPrefix() {
         Output output = new Output();
         List<String> list = this.myOutput.getList();

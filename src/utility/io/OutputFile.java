@@ -2,6 +2,7 @@ package utility.io;
 
 import utility.converter.Converter;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -13,13 +14,17 @@ import java.util.List;
 public abstract class OutputFile implements Save {
 
     protected final String INPUT_BASE = "BIN";
-    protected final String myPath;
+    protected String myPath;
     protected Output myOutput;
     protected String myExtension;
     protected List<String> myHeader;
 
     public OutputFile(String path, Output data) {
         this.myPath = path;
+        this.myOutput = data;
+    }
+
+    public OutputFile(Output data) {
         this.myOutput = data;
     }
 
@@ -40,6 +45,10 @@ public abstract class OutputFile implements Save {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<String> saveFile() {
+        return this.myOutput.getList();
     }
 
     protected void convertOutputToBase(String outputBase, String digits) {

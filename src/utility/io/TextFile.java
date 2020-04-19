@@ -14,8 +14,8 @@ public class TextFile extends OutputFile {
 
     private static final String EXTENSION = ".txt";
 
-    public TextFile(String path, String outputBase, String digits, Output data) {
-        super(path, data);
+    public TextFile(String outputBase, String digits, Output data) {
+        super(data);
         this.myExtension = EXTENSION;
         this.myHeader = new ArrayList<>();
         convertOutputToBase(outputBase, digits);
