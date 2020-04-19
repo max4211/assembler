@@ -1,14 +1,6 @@
 package view;
 
-import ISA.ISA;
-import data.xmlreader.XMLReader;
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -25,15 +17,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import model.assembler.Assembler;
-import utility.converter.Converter;
-import utility.io.Input;
-import utility.io.Output;
-
-import java.io.*;
-import java.util.List;
 
 public class View extends Application {
 
@@ -158,6 +142,5 @@ public class View extends Application {
 
         return gridPane;
     }
-
 
 }
