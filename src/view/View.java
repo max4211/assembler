@@ -95,7 +95,7 @@ public class View extends Application {
         Label inputValueLabel = new Label("Input Value");
         gridPane.add(inputValueLabel, 0, 1);
 
-        TextField inputField = createNumericTextField();
+        TextField inputField = new NumericField();
         gridPane.add(inputField, 0, 2);
 
         Label inputBaseLabel = new Label("Input Base");
@@ -104,10 +104,10 @@ public class View extends Application {
         Label digitsLabel = new Label("Output digits");
         gridPane.add(digitsLabel, 0, 3);
 
-        TextField digitsField = createNumericTextField();
+        TextField digitsField = new NumericField();
         gridPane.add(digitsField, 0, 4);
 
-        ComboBox inputBaseBox = createBaseBox();
+        ComboBox inputBaseBox = new BaseBox();
         gridPane.add(inputBaseBox, 1, 2);
 
         Label outputValueLabel = new Label("Output Value");
@@ -119,34 +119,13 @@ public class View extends Application {
         Label outputBaseLabel = new Label("Output Base");
         gridPane.add(outputBaseLabel, 1, 3);
 
-        ComboBox outputBaseBox = createBaseBox();
+        ComboBox outputBaseBox = new BaseBox();
         gridPane.add(outputBaseBox, 1, 4);
 
-        Button convertButton = createConvertButton(stage, digitsField, inputField, inputBaseBox, outputField, outputBaseBox);
+        Button convertButton = new ConvertButton(stage, digitsField, inputField, inputBaseBox, outputField, outputBaseBox);
         gridPane.add(convertButton, 0, 7);
 
         return gridPane;
-    }
-
-    private Button createConvertButton(Stage stage,
-                                       TextField digitsField,
-                                       TextField inputField, ComboBox inputBaseBox,
-                                       TextField outputField, ComboBox outputBaseBox) {
-        Button btn = new Button("Convert");
-        btn.setOnAction(
-                new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent e) {
-                        String inputValue = inputField.getText();
-                        String inputBase = (String) inputBaseBox.getValue();
-                        String outputBase = (String) outputBaseBox.getValue();
-                        Converter c = new Converter(inputValue, inputBase, outputBase);
-                        String outputValue = c.execute();
-                        outputField.setText(outputValue);
-                    }
-                }
-        );
-        return btn;
     }
 
     private GridPane createAssemblerForm(Stage stage) {
@@ -162,13 +141,13 @@ public class View extends Application {
         Label digitsLabel = new Label("Enter desired digits:");
         gridPane.add(digitsLabel, 0, 1);
 
-        TextField digitsField = createNumericTextField();
+        TextField digitsField = new NumericField();
         gridPane.add(digitsField, 0, 2);
 
-        ComboBox outputTypeBox = createFiletypeBox();
+        ComboBox outputTypeBox = new FileBox();
         gridPane.add(outputTypeBox, 1, 2);
 
-        ComboBox outputBaseBox = createBaseBox();
+        ComboBox outputBaseBox = new BaseBox();
         gridPane.add(outputBaseBox, 2, 2);
 
         Label selectLabel = new Label("Select a to assemble file:");
@@ -180,104 +159,5 @@ public class View extends Application {
         return gridPane;
     }
 
-    private TextField createNumericTextField() {
-        TextField textField = new TextField();
-        textField.textProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue,
-                                String newValue) {
-                if (!newValue.matches("\\d*")) {
-                    textField.setText(newValue.replaceAll("[^\\d]", ""));
-                }
-            }
-        });
-        return textField;
-    }
-
-    private Button createAssembleButton(Stage stage,
-                                        ComboBox outputType,
-                                        TextField digits, ComboBox outputBase) {
-        Button btn = new Button("Assemble");
-        FileChooser fc = new FileChooser();
-        fc.setTitle("Select file to assemble");
-        fc.setInitialDirectory(new File(System.getProperty("user.dir") + "/data/test/"));
-        btn.setOnAction(
-                new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent e)  {
-                        try {
-                            String ISAfile = "src/data/MIPS/ece350ISA.xml";
-                            String outputPath = "data/test/viewtest";
-                            File inputFile = fc.showOpenDialog(stage);
-
-                            // MODEL CODE TO GET TO OUTPUT
-                            XMLReader reader = new XMLReader(ISAfile);
-                            ISA myISA = reader.getISA();
-                            Assembler myAssembler = new Assembler(myISA);
-                            Input input = new Input(inputFile);
-
-                            // FINAL OUTPUT CONSTRUCTION AND WRITE
-                            Output output = myAssembler.assemble(input);
-                            List<String> text = output.write((String) outputType.getValue(), (String) outputBase.getValue(), digits.getText());
-                            FileChooser fc = new FileChooser();
-                            FileChooser.ExtensionFilter exFilter = createExtensionFilters((String) outputType.getValue());
-                            fc.getExtensionFilters().add(exFilter);
-                            File file = fc.showSaveDialog(stage);
-                            if (file != null)
-                                saveTextToFile(text, file);
-                        } catch (Exception ex) {
-                            ex.printStackTrace();
-                        }
-                    }
-
-                    private void saveTextToFile(List<String> text, File file) {
-                        try {
-                            PrintWriter writer = new PrintWriter(file);
-                            for (String s: text)
-                                writer.println(s);
-                            writer.close();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                    private FileChooser.ExtensionFilter createExtensionFilters(String value) {
-                        if (value.equals("Logism"))
-                            return new FileChooser.ExtensionFilter("LOGISM files (*lgsim)", "*.lgsim");
-                        else if (value.equals("Mif"))
-                            return new FileChooser.ExtensionFilter("MIF files (*mif)", "*.mif");
-                        else
-                            return new FileChooser.ExtensionFilter("TXT files (*txt)", "*.txt");
-                    }
-                }
-        );
-        return btn;
-    }
-
-    private ComboBox createBaseBox() {
-        ComboBox box = new ComboBox();
-        ObservableList<String> options =
-                FXCollections.observableArrayList(
-                        "HEX",
-                        "BIN",
-                        "DEC"
-                );
-        box.setValue("Base");
-        box.setItems(options);
-        return box;
-    }
-
-    private ComboBox createFiletypeBox() {
-        ComboBox box = new ComboBox();
-        ObservableList<String> options =
-                FXCollections.observableArrayList(
-                        "Logism",
-                        "Mif",
-                        "Text"
-                );
-        box.setValue("File Type");
-        box.setItems(options);
-        return box;
-    }
 
 }
