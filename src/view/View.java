@@ -3,6 +3,8 @@ package view;
 import ISA.ISA;
 import data.xmlreader.XMLReader;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,6 +17,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
@@ -38,7 +42,7 @@ public class View extends Application {
     private static final String STYLESHEETS = "stylesheet.css";
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         Scene myScene = setupGame(stage);
         myScene.getStylesheets().add(STYLESHEETS);
         stage.setScene(myScene);
@@ -58,6 +62,17 @@ public class View extends Application {
         box.getChildren().add(createAssemblerForm(stage));
         box.getChildren().add(createConverterForm(stage));
         root.setCenter(box);
+        root.setTop(createHeader());
+    }
+
+    private ImageView createHeader() {
+        Image image = new Image("duke_ece.PNG");
+        ImageView imageView = new ImageView();
+        imageView.setImage(image);
+        imageView.setFitWidth(SCREEN_WIDTH);
+        imageView.setPreserveRatio(true);
+        return imageView;
+
     }
 
     private GridPane createGridPane() {
@@ -79,20 +94,26 @@ public class View extends Application {
         Label inputValueLabel = new Label("Input Value");
         gridPane.add(inputValueLabel, 0, 1);
 
-        TextField inputField = new TextField();
+        TextField inputField = createNumericTextField();
         gridPane.add(inputField, 0, 2);
 
         Label inputBaseLabel = new Label("Input Base");
         gridPane.add(inputBaseLabel, 1, 1);
 
+        Label digitsLabel = new Label("Output digits");
+        gridPane.add(digitsLabel, 0, 3);
+
+        TextField digitsField = createNumericTextField();
+        gridPane.add(digitsField, 0, 4);
+
         ComboBox inputBaseBox = createBaseBox();
         gridPane.add(inputBaseBox, 1, 2);
 
         Label outputValueLabel = new Label("Output Value");
-        gridPane.add(outputValueLabel, 0, 3);
+        gridPane.add(outputValueLabel, 0, 5);
 
         TextField outputField = new TextField();
-        gridPane.add(outputField, 0, 4);
+        gridPane.add(outputField, 0, 6);
 
         Label outputBaseLabel = new Label("Output Base");
         gridPane.add(outputBaseLabel, 1, 3);
@@ -100,13 +121,14 @@ public class View extends Application {
         ComboBox outputBaseBox = createBaseBox();
         gridPane.add(outputBaseBox, 1, 4);
 
-        Button convertButton = createConvertButton(stage, inputField, inputBaseBox, outputField, outputBaseBox);
+        Button convertButton = createConvertButton(stage, digitsField, inputField, inputBaseBox, outputField, outputBaseBox);
         gridPane.add(convertButton, 0, 7);
 
         return gridPane;
     }
 
     private Button createConvertButton(Stage stage,
+                                       TextField digitsField,
                                        TextField inputField, ComboBox inputBaseBox,
                                        TextField outputField, ComboBox outputBaseBox) {
         Button btn = new Button("Convert");
@@ -133,13 +155,13 @@ public class View extends Application {
         title.setFont(Font.font("Opera", FontWeight.NORMAL, 20));
         gridPane.add(title, 0, 0, 2, 1);
 
-        Label selectLabel = new Label("Select a file:");
-        gridPane.add(selectLabel, 0, 1);
+        Label outputOptions = new Label("Output options:");
+        gridPane.add(outputOptions, 1, 1);
 
-        Label outputOptions = new Label("Select output options:");
-        gridPane.add(outputOptions, 0, 2);
+        Label digitsLabel = new Label("Enter desired digits:");
+        gridPane.add(digitsLabel, 0, 1);
 
-        TextField digitsField = new TextField("Digits");
+        TextField digitsField = createNumericTextField();
         gridPane.add(digitsField, 0, 2);
 
         ComboBox outputTypeBox = createFiletypeBox();
@@ -148,10 +170,27 @@ public class View extends Application {
         ComboBox outputBaseBox = createBaseBox();
         gridPane.add(outputBaseBox, 2, 2);
 
+        Label selectLabel = new Label("Select a to assemble file:");
+        gridPane.add(selectLabel, 0, 3);
+
         Button fileChooser = createAssembleButton(stage, outputTypeBox, digitsField, outputBaseBox);
-        gridPane.add(fileChooser, 0, 3);
+        gridPane.add(fileChooser, 1, 3);
 
         return gridPane;
+    }
+
+    private TextField createNumericTextField() {
+        TextField textField = new TextField();
+        textField.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue,
+                                String newValue) {
+                if (!newValue.matches("\\d*")) {
+                    textField.setText(newValue.replaceAll("[^\\d]", ""));
+                }
+            }
+        });
+        return textField;
     }
 
     private Button createAssembleButton(Stage stage,
@@ -182,7 +221,6 @@ public class View extends Application {
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
-
                     }
                 }
         );

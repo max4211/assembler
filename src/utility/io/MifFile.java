@@ -19,7 +19,7 @@ public class MifFile extends OutputFile {
         this.myExtension = ".mif";
         this.myHeader = new ArrayList<>(List.of(
                 "DEPTH = 4096;",
-                "WIDTH = 32;",
+                "WIDTH = " + digits + ";",
                 "ADDRESS_RADIX = DEC;",
                 "DATA_RADIX = " + outputBase + ";",
                 "CONTENT",
