@@ -1,6 +1,5 @@
 package view;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -19,14 +18,17 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class View extends Application {
+public class View {
 
     private static final int SCREEN_WIDTH = 400;
     private static final int SCREEN_HEIGHT = 600;
     private static final String TITLE = "ECE 350 Assembler";
     private static final String STYLESHEETS = "stylesheet.css";
 
-    @Override
+    public View() {
+
+    }
+
     public void start(Stage stage) {
         Scene myScene = setupGame(stage);
         myScene.getStylesheets().add(STYLESHEETS);
