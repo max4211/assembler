@@ -144,13 +144,10 @@ public class View extends Application {
         Label selectLabel = new Label("Select a file:");
         gridPane.add(selectLabel, 0, 1);
 
-        Button fileChooser = createFileChooserButton(stage);
-        gridPane.add(fileChooser, 2, 1);
-
         Label outputOptions = new Label("Select output options:");
         gridPane.add(outputOptions, 0, 2);
 
-        TextField digitsField = new TextField("Enter Digits");
+        TextField digitsField = new TextField("Digits");
         gridPane.add(digitsField, 0, 2);
 
         ComboBox outputTypeBox = createFiletypeBox();
@@ -159,16 +156,19 @@ public class View extends Application {
         ComboBox outputBaseBox = createBaseBox();
         gridPane.add(outputBaseBox, 2, 2);
 
-        Button assembleButton = createAssembleButton(stage, TEMP_SAVE, outputTypeBox, digitsField, outputBaseBox );
-        gridPane.add(assembleButton, 0, 3);
+        Button fileChooser = createAssembleButton(stage, outputTypeBox, digitsField, outputBaseBox);
+        gridPane.add(fileChooser, 0, 3);
 
         return gridPane;
     }
 
     private Button createAssembleButton(Stage stage,
-                                        String inputFile, ComboBox outputType,
+                                        ComboBox outputType,
                                         TextField digits, ComboBox outputBase) {
         Button btn = new Button("Assemble");
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Select file to assemble");
+        fc.setInitialDirectory(new File(System.getProperty("user.dir") + "/data/test/"));
         btn.setOnAction(
                 new EventHandler<ActionEvent>() {
                     @Override
@@ -176,6 +176,7 @@ public class View extends Application {
                         try {
                             String ISAfile = "src/data/MIPS/ece350ISA.xml";
                             String outputPath = "data/test/viewtest";
+                            File inputFile = fc.showOpenDialog(stage);
 
                             // MODEL CODE TO GET TO OUTPUT
                             XMLReader reader = new XMLReader(ISAfile);
@@ -222,62 +223,4 @@ public class View extends Application {
         return box;
     }
 
-    private Button createFileChooserButton(Stage stage) {
-        FileChooser fc = new FileChooser();
-        fc.setTitle("Select file to assemble");
-        fc.setInitialDirectory(new File(System.getProperty("user.dir") + "/data/test/"));
-        Button btn = new Button("Choose File");
-        btn.setOnAction(
-                new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent e) {
-                        File file = fc.showOpenDialog(stage);
-                        rewriteFileToTemp(file);
-                    }
-
-                    private static final String TEMP_SAVE = "/data/temp/file.txt";
-
-                    private void rewriteFileToTemp(File file) {
-                        try {
-                            List<String> fileList = createListFromFile(file);
-                            try {
-                                Files.delete(Paths.get(TEMP_SAVE));
-                            } catch (NoSuchFileException e) {
-                                ;
-                            }
-                            Files.write(Paths.get(TEMP_SAVE),
-                                    fileList,
-                                    StandardCharsets.UTF_8,
-                                    StandardOpenOption.CREATE,
-                                    StandardOpenOption.APPEND);
-                            InputStream input = new FileInputStream(file);
-                            OutputStream output = new FileOutputStream(TEMP_SAVE);
-                            byte[] buffer = new byte[1024];
-                            int length;
-                            while ((length = input.read(buffer)) > 0)
-                                output.write(buffer, 0, length);
-                            input.close();
-                            output.close();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                    private List<String> createListFromFile(File file) {
-                        List<String> list = new ArrayList<>();
-                        try {
-                            BufferedReader br = new BufferedReader(new FileReader(file));
-                            String line;
-                            while ((line = br.readLine()) != null)
-                                list.add(line);
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        return list;
-                    }
-                }
-        );
-        return btn;
-    }
 }
