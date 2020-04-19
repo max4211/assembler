@@ -24,31 +24,23 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import model.assembler.Assembler;
-import org.xml.sax.SAXException;
 import utility.converter.Converter;
 import utility.io.Input;
 import utility.io.Output;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.NoSuchFileException;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.util.ArrayList;
-import java.util.List;
 
 public class View extends Application {
 
     private static final int SCREEN_WIDTH = 400;
     private static final int SCREEN_HEIGHT = 600;
     private static final String TITLE = "ECE 350 Assembler";
-    private static final String TEMP_SAVE = "/data/temp/file.txt";
+    private static final String STYLESHEETS = "stylesheet.css";
 
     @Override
     public void start(Stage stage) throws Exception {
         Scene myScene = setupGame(stage);
+        myScene.getStylesheets().add(STYLESHEETS);
         stage.setScene(myScene);
         stage.setTitle(TITLE);
         stage.show();
