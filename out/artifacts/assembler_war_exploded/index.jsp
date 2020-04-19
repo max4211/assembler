@@ -20,9 +20,9 @@
 </head>
 
 <body>
-<header class="header">
+<div class="header">
   <img src="img/duke_ece.PNG">
-</header>
+</div>
 <div class="hidden">
   <p>Written by: Max Smith</p>
   <p>Mentored by: Nathan Choe</p>
