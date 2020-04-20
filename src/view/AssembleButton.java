@@ -19,6 +19,8 @@ import java.util.List;
 
 public class AssembleButton extends Button {
 
+    private static final String ISAfile = "src/data/MIPS/ece350ISA.xml";
+
     public AssembleButton (Stage stage,
                                         ComboBox outputType,
                                         TextField digits, ComboBox outputBase) {
@@ -31,8 +33,6 @@ public class AssembleButton extends Button {
                     @Override
                     public void handle(ActionEvent e)  {
                         try {
-                            String ISAfile = "src/data/MIPS/ece350ISA.xml";
-                            String outputPath = "data/test/viewtest";
                             File inputFile = fc.showOpenDialog(stage);
 
                             // MODEL CODE TO GET TO OUTPUT
@@ -50,8 +50,11 @@ public class AssembleButton extends Button {
                             FileChooser.ExtensionFilter exFilter = createExtensionFilters((String) outputType.getValue());
                             fc.getExtensionFilters().add(exFilter);
                             File file = fc.showSaveDialog(stage);
-                            if (file != null)
+                            if (file != null) {
                                 saveTextToFile(text, file);
+                                new SaveDialog(file);
+                            }
+
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }

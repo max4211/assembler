@@ -14,7 +14,6 @@ public class NumericField extends TextField {
             public void changed(ObservableValue<? extends String> observable, String oldValue,
                                 String newValue) {
                 if (!newValue.matches("\\d*")) {
-
                     setText(newValue.replaceAll("[^\\d]", ""));
                 }
             }

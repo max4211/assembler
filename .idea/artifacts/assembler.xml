@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="assembler">
+    <output-path>$PROJECT_DIR$/out/artifacts/assembler</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main.main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="assembler.jar">
+        <element id="module-output" name="assembler" />
+      </element>
+    </root>
+  </artifact>
+</component>
