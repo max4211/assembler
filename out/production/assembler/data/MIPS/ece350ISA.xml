@@ -85,4 +85,9 @@
         <Type>NOP</Type>
         <Code>00000</Code>
     </Instruction>
+    <Instruction>
+        <Name>zoom</Name>
+        <Type>R</Type>
+        <Code>10101</Code>
+    </Instruction>
 </ISA>

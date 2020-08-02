@@ -66,6 +66,7 @@ public class Output implements OutputInterface, CustomList {
             OutputFile file = (OutputFile) ctor.newInstance(outputBase, this);
             return file.saveFile();
         } catch (Exception e) {
+            e.printStackTrace();
             throw new ReflectionException(e);
         }
     }
